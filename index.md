@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
 
-You can use the [editor on GitHub](https://github.com/somu640/Somendra.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="utf-8">
+</head>
+<title>619 Assignment</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body style="background-color: steelblue;">
+    <script src="" async defer></script>
+    <h1 style="text-align: center;"> Welcome to my webpage 619</h1>
 
-### Markdown
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        var name = prompt("enter your name");
+        document.write("<h2>" + "Hi  " + name + "<br>" + "</h2>");
+    </script>
+    <p id="k"></p>
+    <a id="demo" style="color: red;"></a>
+    <script style="text-align: end;">
+        document.getElementById("k").innerHTML = "click on button to generate a link" + " Mention your profession as Teacher or IAS or doctor or Student ";
+        var prof = prompt("enter your profession");
+        if (prof == "student" || prof == "Student") {
+            document.getElementById("demo").innerHTML = "Student";
+            document.getElementById("demo").href = "https://www.w3schools.com";
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        } else if (prof == "Doctor" || prof == "doctor") {
+            document.getElementById("demo").innerHTML = "MBBS";
+            document.getElementById("demo").href = "https://www.mciindia.org";
 
-```markdown
-Syntax highlighted code block
+        } else if (prof == "Teacher" || prof == "teacher") {
+            document.getElementById("demo").innerHTML = "Teacher";
+            document.getElementById("demo").href = "https://www.englishclub.com/webguide/Teaching_Jobs/";
 
-# Header 1
-## Header 2
-### Header 3
+        } else if (prof == "IAS" || prof == "Ias") {
+            document.getElementById("demo").innerHTML = "IAS";
+            document.getElementById("demo").href = "https://en.m.wikipedia.org/wiki/Civil_Services_Examination_(India)";
 
-- Bulleted
-- List
+        } else {
+            document.getElementById("demo").innerHTML = "Unidentified";
+            document.getElementById("demo").href = "myweb.html";
+        }
+    </script>
 
-1. Numbered
-2. List
+</body>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/somu640/Somendra.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
